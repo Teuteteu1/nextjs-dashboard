@@ -1,7 +1,13 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import LoginForm from '@/app/ui/login-form';
+import { Metadata } from 'next';
 import { Suspense } from 'react';
- 
+
+export const metadata: Metadata = {
+  title: 'Login',
+  description: 'Sign in to your Acme Dashboard account to manage invoices and customers.',
+};
+
 export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
